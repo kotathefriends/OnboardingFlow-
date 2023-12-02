@@ -16,10 +16,11 @@ struct ContentView: View {
     var body: some View {
         TabView {
             WelcomePageView()
-            featuresPage()
+            FeaturesPage()
         }
         .background(Gradient(colors: gradientColors))
         .tabViewStyle(.page)
+        .foregroundStyle(.white)
     }
 }
 
